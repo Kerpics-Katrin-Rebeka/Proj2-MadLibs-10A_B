@@ -1,0 +1,23 @@
+(place1)
+ attack, ;
+ December 7,;
+(year);
+ , surprise aerial attack on the 
+(country1);
+ . naval base at ;
+(place1);
+ on ;
+(place2);
+ Island, ;
+(place3);
+, by the ;
+(nationality);
+ that precipitated the entry of the ;
+(country1);
+ into World War ;
+(number);
+ . The strike climaxed a decade of worsening relations between the ; 
+(country1);
+ and ;
+(country2);
+ .;
