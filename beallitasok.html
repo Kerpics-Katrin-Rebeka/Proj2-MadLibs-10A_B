@@ -21,7 +21,89 @@
       <i class="fa fa-bars"></i>
     </a>
   </div>
+  <div class="uwu">
+    <h1 style="color: black">
+      Language settings:
+    </h1>
+    
+    <button onclick="changeLanguage('hun')">
+      Az oldal magyarra váltása
+    </button>
+    <button onclick="changeLanguage('eng')">
+      Change page to English
+    </button>
+    <button onclick="changeLanguage('es')">
+      Cambiar pagina a español
+    </button>
+    <button onclick="changeLanguage('ita')">
+      Cambia pagina in italiano
+    </button>
+    <button onclick="changeLanguage('ger')">
+      Seite auf Deutsch wechseln
+    </button>
+    
+    <!-- Define the content of the page
+    that would be changed -->
+    <p id="siteContent">
+      Click on the buttons below to change
+      the language of the webpage.
+    </p>
+  </div>
+  
+  <script>
+    // Create a function to change
+    // the hash value of the page
+    function changeLanguage(lang) {
+      location.hash = lang;
+      location.reload();
+    }
+  
+    // Define the language reload anchors
+    var language = {
+      hun: {
+        welcome: "Kattintson az alábbi gombokra a weboldal nyelvének megváltoztatásához."
+      },
+      eng: {
+        welcome: "Click on the buttons below to change the language of the webpage."
+      },
+      es: {
+        welcome: "Haga clic en los botones a continuación para cambiar el idioma de la página web."
+      },
+      ita: {
+        welcome: "Clicca sui pulsanti sottostanti per cambiare la lingua della pagina web."
+      },
+      ger: {
+        welcome: "Klicken Sie auf die Schaltflächen unten, um die Sprache der Webseite zu ändern."
+      }
+    };
+  
+    // Check if a hash value exists in the URL
+    if (window.location.hash) {
+  
+      // Set the content of the webpage 
+      // depending on the hash value
+      if (window.location.hash == "#es") {
+        siteContent.textContent =
+          language.es.welcome;
+      }
+      else if (window.location.hash == "#hun") {
+        siteContent.textContent =
+          language.hun.welcome;
+      }
+      else if (window.location.hash == "#eng") {
+        siteContent.textContent =
+          language.eng.welcome;
+      }
+      else if (window.location.hash == "#ita") {
+        siteContent.textContent =
+          language.ita.welcome;
+      }
+      else if (window.location.hash == "#ger") {
+        siteContent.textContent =
+          language.ger.welcome;
+      }
+    }
+  </script>
   <script src="navbar.js"></script>
 </body>
-
 </html>
