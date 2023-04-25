@@ -1,0 +1,25 @@
+body {
+  background-color: paleturquoise;
+}
+
+.leiras {
+  margin: 50px;
+  margin-top: 1px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.title {
+  font-size: 50px;
+  font-family: monospace;
+  font-weight: bold;
+  padding: 0.5%;
+  margin: 30px;
+  /* margin-bottom: 1px; */
+  border-right: 6px solid black;
+  border-bottom: 6px solid black;
+  border-bottom-right-radius: 6px;
+  text-align: center;
+  background-color: white;
+  height: 0.5%;
+}
