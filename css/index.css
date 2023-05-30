@@ -1,0 +1,43 @@
+.page{
+    padding: 40px;
+    padding-top: 90px;
+}
+
+h1{
+    padding-bottom: 10px;
+    border-bottom: 3px solid red;
+    border-right: 3px solid red;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+h2{
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+p{
+    padding-left: 30px;
+    font-size: large;
+}
+
+.szoveg{
+    width: 100%;
+}
+
+.ketto{
+    text-align: left;
+}
+
+.row{
+    padding-top: 30px;
+    border-bottom: 3px solid red;
+    padding-bottom: 20px;
+}
+
+.kep{
+    width: 100%;
+    margin-right: 120px;
+    margin-top: 30px;
+    border-radius: 20px;
+}

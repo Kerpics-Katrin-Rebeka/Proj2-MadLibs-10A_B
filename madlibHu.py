@@ -15,32 +15,32 @@ def hun_main():
         def finish_madlib(tl: Toplevel, melleknev1, fonev1, melleknev2, fonev2, melleknev3, fonev3, melleknev4, fonev4, melleknev5, fonev5,melleknev6, fonev6, melleknev7, fonev7):
             text = f'''Volt egyszer egy bátor,{melleknev1} {fonev1}, aki elindult egy küldetésre, hogy megtalálja a(z) {melleknev2} {fonev2}-t. Útközben találkozott egy {melleknev3} {fonev3}-val/vel, egy {melleknev4} {fonev4}-val/vel és egy {melleknev5} {fonev5}-val/vel. De a {melleknev6} {fonev6}-jével/jával és eltökéltségével sikerült elérnie a célját és megszereznie az {melleknev7} {fonev7}-t/-at/-et, mint jutalmat.'''
 
-            Label(tl, text='A sztori:', font=("Times", 13, "bold"), wraplength=tl.winfo_width(), bg='lightblue').place(
+            Label(tl, text='A sztori:', font=("Times", 13, "bold"), wraplength=tl.winfo_width(), bg='DarkOrange').place(
             x=130, y=480)
-            Label(tl, text=text, font=("Times", 13, 'bold'), wraplength=tl.winfo_width(), bg='lightblue').place(x=0, y=480)
+            Label(tl, text=text, font=("Times", 13, 'bold'), wraplength=tl.winfo_width(), bg='DarkOrange').place(x=0, y=480)
 
-        top = Toplevel(bg='lightblue')
+        top = Toplevel(bg='DarkOrange')
         top.title("A jutalom")
         top.geometry('600x600')
         top.resizable(False, False)
 
-        Label(top, text='A Jutalom - Mad Libs', font=("Times", 17, 'bold'), bg='lightblue').place(
+        Label(top, text='A Jutalom - Mad Libs', font=("Times", 17, 'bold'), bg='DarkOrange').place(
             x=115, y=0)
         
-        melleknev1 = Label(top, text = "Adjon meg egy melléknevet: ", bg='lightblue').place(x = 40, y = 60) 
-        fonev1 = Label(top, text = "Adjon meg egy főnevet: ", bg='lightblue').place(x = 40, y = 90)
-        melleknev2 = Label(top, text = "Adjon meg egy melléknevet: ", bg='lightblue').place(x = 40, y = 120)
-        fonev2 = Label(top, text = "Adjon meg egy főnevet: ", bg='lightblue').place(x = 40, y = 150)
-        melleknev3 = Label(top, text = "Adjon meg egy melléknevet: ", bg='lightblue').place(x = 40, y = 180)
-        fonev3 = Label(top, text = "Adjon meg egy főnevet: ", bg='lightblue').place(x = 40, y = 210)
-        melleknev4 = Label(top, text = "Adjon meg egy melléknevet: ", bg='lightblue').place(x = 40, y = 240)
-        fonev4 = Label(top, text = "Adjon meg egy főnevet: ", bg='lightblue').place(x = 40, y = 270)
-        melleknev5 = Label(top, text = "Adjon meg egy melléknevet: ", bg='lightblue').place(x = 40, y = 300)
-        fonev5 = Label(top, text = "Adjon meg egy főnevet: ", bg='lightblue').place(x = 40, y = 330)
-        melleknev6 = Label(top, text = "Adjon meg egy melléknevet: ", bg='lightblue').place(x = 40, y = 360)
-        fonev6 = Label(top, text = "Adjon meg egy főnevet: ", bg='lightblue').place(x = 40, y = 390)
-        melleknev7 = Label(top, text = "Adjon meg egy melléknevet: ", bg='lightblue').place(x = 40, y = 420)
-        fonev7 = Label(top, text = "Adjon meg egy főnevet: ", bg='lightblue').place(x = 40, y = 450) 
+        melleknev1 = Label(top, text = "Adjon meg egy melléknevet: ", bg='DarkOrange').place(x = 40, y = 60) 
+        fonev1 = Label(top, text = "Adjon meg egy főnevet: ", bg='DarkOrange').place(x = 40, y = 90)
+        melleknev2 = Label(top, text = "Adjon meg egy melléknevet: ", bg='DarkOrange').place(x = 40, y = 120)
+        fonev2 = Label(top, text = "Adjon meg egy főnevet: ", bg='DarkOrange').place(x = 40, y = 150)
+        melleknev3 = Label(top, text = "Adjon meg egy melléknevet: ", bg='DarkOrange').place(x = 40, y = 180)
+        fonev3 = Label(top, text = "Adjon meg egy főnevet: ", bg='DarkOrange').place(x = 40, y = 210)
+        melleknev4 = Label(top, text = "Adjon meg egy melléknevet: ", bg='DarkOrange').place(x = 40, y = 240)
+        fonev4 = Label(top, text = "Adjon meg egy főnevet: ", bg='DarkOrange').place(x = 40, y = 270)
+        melleknev5 = Label(top, text = "Adjon meg egy melléknevet: ", bg='DarkOrange').place(x = 40, y = 300)
+        fonev5 = Label(top, text = "Adjon meg egy főnevet: ", bg='DarkOrange').place(x = 40, y = 330)
+        melleknev6 = Label(top, text = "Adjon meg egy melléknevet: ", bg='DarkOrange').place(x = 40, y = 360)
+        fonev6 = Label(top, text = "Adjon meg egy főnevet: ", bg='DarkOrange').place(x = 40, y = 390)
+        melleknev7 = Label(top, text = "Adjon meg egy melléknevet: ", bg='DarkOrange').place(x = 40, y = 420)
+        fonev7 = Label(top, text = "Adjon meg egy főnevet: ", bg='DarkOrange').place(x = 40, y = 450) 
         
         melleknev1_input_area = Entry(top, width = 30)
         melleknev1_input_area.place(x = 210, y = 60) 
@@ -80,26 +80,26 @@ def hun_main():
         def finish_madlib2(tl: Toplevel, melleknev1, foglalkozas1, melleknev2, foglalkozas2, foglalkozas3, foglalkozas4, melleknev3, foglalkozas5):
             text = f'''Volt egyszer egy titokzatos {melleknev1} város, amelyről senki sem tudta, hol található. Egy nap azonban egy fiatal {foglalkozas1} útnak indult, hogy megtalálja az elveszett várost. Útközben találkozott egy {melleknev2} {foglalkozas2}-al/el/val/vel, aki segített neki átvészelni az erdőt, a hegyeket és a folyókat. Végül megérkeztek a városba, ahol egy titokzatos {foglalkozas3} várta őket és elárulta az elveszett város sötét titkait. A fiatal {foglalkozas4} és a {melleknev3} {foglalkozas5} elhatározták, hogy segítenek megmenteni a várost, mielőtt késő lenne.'''
 
-            Label(tl, text='A sztori:', font=("Times", 13, "bold"), wraplength=tl.winfo_width(), bg='lightblue').place(
+            Label(tl, text='A sztori:', font=("Times", 13, "bold"), wraplength=tl.winfo_width(), bg='red').place(
             x=130, y=300)
-            Label(tl, text=text, font=("Times", 13, 'bold'), wraplength=tl.winfo_width(), bg='lightblue').place(x=0, y=300)
+            Label(tl, text=text, font=("Times", 13, 'bold'), wraplength=tl.winfo_width(), bg='red').place(x=0, y=300)
 
-        top = Toplevel(bg='lightblue')
+        top = Toplevel(bg='red')
         top.title("A titokzatos város")
         top.geometry('600x420')
         top.resizable(False, False)
 
-        Label(top, text='A titokzatos város - Mad Libs', font=("Times", 17, 'bold'), bg='lightblue').place(
+        Label(top, text='A titokzatos város - Mad Libs', font=("Times", 17, 'bold'), bg='red').place(
             x=115, y=0)
         
-        melleknev1 = Label(top, text = "Adjon meg egy melléknevet: ",bg='lightblue').place(x = 40, y = 60) 
-        foglalkozas1 = Label(top, text = "Adjon meg egy foglalkozást: ",bg='lightblue').place(x = 40, y = 90)
-        melleknev2 = Label(top, text = "Adjon meg egy melléknevet: ",bg='lightblue').place(x = 40, y = 120)
-        foglalkozas2 = Label(top, text = "Adjon meg egy foglalkozást: ",bg='lightblue').place(x = 40, y = 150)
-        foglalkozas3 = Label(top, text = "Adjon meg egy foglalkozást: ",bg='lightblue').place(x = 40, y = 180)
-        foglalkozas4 = Label(top, text = "Adjon meg egy foglalkozást: ",bg='lightblue').place(x = 40, y = 210)
-        melleknev3 = Label(top, text = "Adjon meg egy melléknevet: ",bg='lightblue').place(x = 40, y = 240)
-        foglalkozas5 = Label(top, text = "Adjon meg egy foglalkozást: ",bg='lightblue').place(x = 40, y = 270)
+        melleknev1 = Label(top, text = "Adjon meg egy melléknevet: ",bg='red').place(x = 40, y = 60) 
+        foglalkozas1 = Label(top, text = "Adjon meg egy foglalkozást: ",bg='red').place(x = 40, y = 90)
+        melleknev2 = Label(top, text = "Adjon meg egy melléknevet: ",bg='red').place(x = 40, y = 120)
+        foglalkozas2 = Label(top, text = "Adjon meg egy foglalkozást: ",bg='red').place(x = 40, y = 150)
+        foglalkozas3 = Label(top, text = "Adjon meg egy foglalkozást: ",bg='red').place(x = 40, y = 180)
+        foglalkozas4 = Label(top, text = "Adjon meg egy foglalkozást: ",bg='red').place(x = 40, y = 210)
+        melleknev3 = Label(top, text = "Adjon meg egy melléknevet: ",bg='red').place(x = 40, y = 240)
+        foglalkozas5 = Label(top, text = "Adjon meg egy foglalkozást: ",bg='red').place(x = 40, y = 270)
 
         
         melleknev1_input_area = Entry(top, width = 30)
