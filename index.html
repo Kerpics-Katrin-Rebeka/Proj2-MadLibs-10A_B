@@ -1,27 +1,122 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="shortcut icon" href="képek/madlibs.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>MadLibs</title>
 </head>
 
 <body>
-  <div class="topnav" id="myTopnav">
-    <a class="logo" href="index.html"><img class="nav-pic" src="kepek/madlibs.png" width="150px" float="right"></a>
-    <a href="index.html" class="active">Játék</a>
-    <a href="jatekleiras.html">Játékleírás</a>
-    <a href="beallitasok.html">Beállítások</a>
-    <a href="nevjegy.html">Névjegy</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-  <script src="navbar.js"></script>
-</body>
+    <div id="cont1">
+    <!-- Navigácio -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">MadLibs</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Kezdőlap</a></li>
+            <li class="nav-item"><a class="nav-link" href="jatekleiras.html">Játékleírás</a></li>
+            <li class="nav-item"><a class="nav-link" href="nevjegy.html">Névjegy</a></li>
+            <button onclick="applyTheme('')" class="theme-button-light">gf</button>
+            <button onclick="applyTheme('dark')" class="theme-button-dark">gf</button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page">
+      <h1>A projekt elkészítésének lépései</h1>
+      <div class="row">
+        <div class="col-6">
+          <h2>1. Az ötlet</h2>
+          <div class="szoveg">
+            <p>Mind minden projekt, ez is azzal kezdődött, hogy ki kellet találnunk, hogy mit is csináljunk pontosan. Egy kis fejtörés és több nagyszerű ötlet után arra a közös megegyezésre jutottunk, hogy a MadLibs nevű játékot fogjunk Pythonban megvalósítani.</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <img src="képek/kezdőlap/ezgif.com-webp-to-jpg.jpg" class="kep">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <img src="képek/kezdőlap/photo-1542831371-29b0f74f9713.jpeg" class="kep">
+        </div>
+        <div class="col-6">
+          <h2 class="ketto">2. A HTML oldal elkészítése</h2>
+          <div class="szoveg">
+            <p class="ketto">Mielőtt belekezdtünk volna a Python programozásba úgy döntöttünk, hogy előbb egy HTML oldalt készítünk a kód bemutatására, illetve irányadás céljából. Az oldal elkészítésében mind hárman részt vettünk.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h2>3. A Python kód megírása</h2>
+          <div class="szoveg">
+            <p>A következő lépés természetesen a kód megírása volt. Eleinte egyszerű CLI programként akartuk megvalósítani az ötletünket, de a végén Dominik ötletéből kiindulva GUI-ban írtuk meg a programot. Mivel Pythonban dolgoztunk a Tkinter segítségével készítettük el a játékot grafikusan. A kód alapjait Dominik készítette, és Katrin fejezte be.</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <img src="képek/kezdőlap/Untitled.png" class="kep">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <img src="képek/kezdőlap/CreativeWriting-1.jpg" class="kep">
+        </div>
+        <div class="col-6">
+          <h2 class="ketto">4. A történetek megírása</h2>
+          <div class="szoveg">
+            <p class="ketto">Mivel a MadLibs játékok történetek kiegészítésére alapul, ezért az is feladatunk volt, hogy ezeket a történeteket kitaláljuk, illetve megírjuk. Ebben a részben úgyszint mindhárman részt vettünk.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h2>5. A történetek lefordítása</h2>
+          <div class="szoveg">
+            <p>A játékunkban 5 elérhető nyelv van, a magyar, az angol, a spanyol, a német és az olasz. Mindegyik nyelvnek saját Python fájlja van. A fordításokat internet segítségével csináltunk, mivel sajnos egyikünk sem beszél folyékonyan németül, olaszul vagy spanyolul.</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <img src="képek/kezdőlap/Untitled2.png" class="kep">
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="javascript/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script>
+      function applyTheme(theme) {
+          var body = document.getElementsByTagName('body')[0];
+          body.className = theme;
+          
+          // Save the selected theme to local storage
+          localStorage.setItem('theme', theme);
+      }
+      
+      // Check if a theme is already set in local storage
+      var savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+          applyTheme(savedTheme);
+      }
+      </script>
+</body>
 </html>

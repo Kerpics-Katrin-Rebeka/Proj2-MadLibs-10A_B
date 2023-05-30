@@ -74,6 +74,7 @@ def eng_main():
 
         top.mainloop()
 
+
     def madlib2():
         def finish_madlib2(tl: Toplevel, adjective1, noun1, adjective2, adjective3, noun2, adjective4, noun3, adjective5,  noun4, adjective6, noun5, adjective7, noun6, adjective8, noun7, adjective9, noun8, adjective10):
             text = f'''Once upon a time, a {adjective1} {noun1} set out on a(n) {adjective2} journey. They packed a {adjective3} {noun2} a {adjective4} {noun3} and a {adjective5} {noun4} for the trip. Along the way, they encountered a {adjective6} {noun5} who offered to help. Together, they faced a {adjective7} {noun6} and finally discovered a {adjective8} {noun7}. The {adjective9} {noun8} returned home, proud of their {adjective10} journey.'''

@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital@1&family=Rubik&display=swap");
+#cont {
+  /* background-image: linear-gradient(black, grey);*/
+
+  font-family: "Rubik", sans-serif;
+  /*height: 500vh;*/
+  width: auto;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  margin-top: 35px;
+}
+
+.bevezeto {
+  color: white;
+}
+
+#bevezetokep {
+  height: 100%;
+  width: auto;
+}
+
+section {
+  color: white;
+}
+
+.active{
+  text-decoration: underline;
+}
+
+.gomb {
+  text-decoration: none;
+  padding: 0.9em;
+  background-color: rgb(0, 26, 255);
+  color: white;
+  border-radius: 10px;
+  border: 0px rgb(0, 26, 255);
+  position: relative;
+  font-size: 0, 8em;
+  font-weight: bold;
+}
+
+.gomb:hover {
+  background-color: rgb(0, 26, 255);
+  transition: 1s;
+  text-decoration: none;
+  color: white;
+  border: 0px rgb(0, 26, 255);
+  font-weight: bold;
+}
+
+#cards {
+  color: white;
+}
+
+.nav-item:hover {
+  background-color: rgb(0, 26, 255);
+  box-sizing: border-box;
+  border-radius: 40px;
+  transition: 1s ease;
+  position: relative;
+}
+
+.nav-item {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.container a.navbar-brand {
+  font-weight: 700;
+  font-size: 30px;
+  color: red;
+  text-decoration: dashed;
+}
+
+button.navbar-toggler {
+  color: rgb(0, 26, 255);
+}
+nav.navbar {
+  background-color: black;
+}
+
+#cont1 {
+  /* background-image: linear-gradient(black, grey);*/
+
+  font-family: "Rubik", sans-serif;
+  /* height: 200vh;*/
+  width: auto;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  margin-top: 35px;
+}
+
+#cont2 {
+  font-family: "Rubik", sans-serif;
+  /*height: 950vh;*/
+  width: auto;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  margin-top: 70px;
+}
+
+#cont3 {
+  /* background-image: linear-gradient(black, grey);*/
+
+  font-family: "Rubik", sans-serif;
+  height: 100%;
+  width: auto;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  margin-top: 35px;
+}
+
+#cont4 {
+  /* background-image: linear-gradient(black, grey);*/
+
+  font-family: "Rubik", sans-serif;
+  height: 100vh;
+  width: auto;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  margin-top: 140px;
+}
+
+#cont5 {
+  /* background-image: linear-gradient(black, grey);*/
+
+  font-family: "Rubik", sans-serif;
+  height: 100vh;
+  width: auto;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  margin-top: 140px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: static;
+  background-color: white;
+  color: black;
+  transition: 1s;
+}
+
+body.dark {
+  width: 100%;
+  height: 100%;
+  position: static;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  transition: 1s;
+}
+
+.kep {
+  border-radius: 20px;
+}
+.navbar-toggler {
+  width: 10vh;
+}
+
+.navbar-toggler:hover {
+  background-color: transparent;
+}
+
+.nav-link {
+  padding: 0;
+  margin: 5px;
+  text-align: left;
+  display: block;
+}
+
+.link {
+  padding: 0;
+  margin: 5px;
+  text-align: left;
+  display: block;
+}
+
+.nav-item {
+  margin: 5px;
+  color: red;
+}
+
+.év {
+  color: rgb(167, 163, 163) !important ;
+}
+
+#cont6 {
+  font-family: "Rubik", sans-serif;
+  height: 91.4vh;
+  width: auto;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  margin-top: 80px;
+}
+
+#siteContent {
+  color: white;
+}
+
+#siteContent:hover {
+  margin-left: 5px;
+}
+
+a:hover {
+  border-radius: 6px;
+  margin-left: 30px;
+}
+
+.navbar-brand:hover {
+  background-color: blue;
+  color: white;
+}
+
+.socials {
+  color: blue;
+}
+
+.names:hover {
+  background-color: red;
+  color: white;
+  border-radius: 6px;
+}
+
+
+.fa-facebook {
+  color: blue;
+}
+
+.oldal{
+  padding-top: 60px;
+  text-align: center;
+}
+
+.theme-button-dark{
+  width: 15%;
+  height: 30px;
+  margin: 10px;
+  color: black;
+  background-color: black;
+  border: 2px solid gray;
+  border-radius: 100%;
+}
+
+.theme-button-light{
+  width: 40%;
+  height: 30px;
+  margin: 10px;
+  background-color: white;
+  color: white;
+  border: 2px solid gray;
+  border-radius: 100%;
+}

@@ -1,27 +1,123 @@
 <!DOCTYPE html>
-<html lang="hu">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="nevjegy.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
+    <link rel="shortcut icon" href="képek/madlibs.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/nevjegy.css">
     <title>Névjegy</title>
 </head>
-
 <body>
-  <div class="topnav" id="myTopnav">
-    <a class="logo" href="index.html"><img class="nav-pic" src="kepek/madlibs.png" width="150px" float="right"></a>
-    <a href="index.html">Játék</a>
-    <a href="jatekleiras.html">Játékleírás</a>
-    <a href="beallitasok.html">Beállítások</a>
-    <a href="nevjegy.html" class="active">Névjegy</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-  <script src="navbar.js"></script>
-</body>
+    <div id="cont3">
+        <!-- Navigácio -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Névjegy</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Kezdőlap</a></li>
+                <li class="nav-item"><a class="nav-link" href="jatekleiras.html">Játékleírás</a></li>
+                <li class="nav-item"><a class="nav-link active" href="nevjegy.html">Névjegy</a></li>
+                <button onclick="applyTheme('')" class="theme-button-light">gf</button>
+                <button onclick="applyTheme('dark')" class="theme-button-dark">gf</button>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
+      <div class="profile-area pt-5">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 pb-5 wow fadeInLeft col-sm-6  slow">
+                    <div class="card ho">
+                        <div class="img1 view overlay"><img src="képek/névjegy/H.jpg" alt="img3"><a href="#!"><div class="mask rgba-white-slight"></div></a></div>
+                        <!-- <div class="img2"><img src="képek/" alt="img4"></div> -->
+                        <div class="main-text">
+                            <h2 class="names">Luo Hong Jun</h2>
+                            <p><div class="details">Csoporttag</div></p>
+                            <p><div class="details">Feladata: weboldalon való munkálatok, történetek megírása, kisebb GUI foltozások, fordítás segítése</div></p>
+                            <p><div class="details">Elérhetőségek:</div></p>
+                        </div>
+                        <div class="socials">
+                            <a href="https://github.com/Luo-Hong-Jun" target="_blank"><i class="fa fa-github"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/luo.hongjun.9" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 pb-5 wow fadeInDown col-sm-6 slow col-lg-4">
+                    <div class="card ho">
+                        <div class="img1 view overlay"><img src="képek/névjegy/K.jpg" alt="img1"><a href="#!"><div class="mask rgba-white-slight"></div></a></div>
+                        <!-- <div class="img2"><img src="képek/" alt="img2"></div> -->
+                        <div class="main-text">
+                            <h2 class="names">Kerpics Katrin</h2>
+                            <p><div class="details">Csoportvezető</div></p>
+                            <p><div class="details">Feladata: weboldalon való munkálatok, GUI befejezése, játék többnyelvűvé tétele</div></p>
+                            <p><div class="details">Elérhetőségek:</div></p>
+                        </div>
+                        <div class="socials">
+                            <a href="https://github.com/Kerpics-Katrin-Rebeka" target="_blank"><i class="fa fa-github"></i></a>
+                            <a href="https://www.instagram.com/k.kazri/" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/katrin.kerpics" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 pb-5 wow fadeInRight col-sm-6 col-sm-offset-6 slow">
+                    <div class="card ho">
+                        <div class="img1 view overlay"><img src="képek/névjegy/D.jpg" alt="img3"><a href="#!"><div class="mask  rgba-white-slight"></div></a></div>
+                        <!-- <div class="img2"><img src="képek/" alt="img4"></div> -->
+                        <div class="main-text">
+                            <h2 class="names">Liszkai Dominik</h2>
+                            <p><div class="details">Csoporttag</div></p>
+                            <p><div class="details">Feladata: weboldalon való munkálatok, GUI alapok elkészítése</div></p>
+                            <p><div class="details">Elérhetőségek:</div></p>
+                        </div>
+                        <div class="socials">
+                            <a href="https://github.com/liszkai-dominik" target="_blank"><i class="fa fa-github"></i></a>
+                            <a href="https://www.instagram.com/_dominik_liszkai_/" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/dominik.liszkai.3/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="javascript/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script>
+        function applyTheme(theme) {
+            var body = document.getElementsByTagName('body')[0];
+            body.className = theme;
+            
+            // Save the selected theme to local storage
+            localStorage.setItem('theme', theme);
+        }
+        
+        // Check if a theme is already set in local storage
+        var savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            applyTheme(savedTheme);
+        }
+    </script>
+</body>
 </html>
